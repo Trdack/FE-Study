@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.top,
+.main,
+.footer {
+    max-width: 1200px;
+    border: 1px dashed #333;
+    margin: 5px auto;
+}
+
+.top {
+    height: 120px;
+    background-color: #45a1f8;
+}
+
+.main {
+    min-height: 560px;
+    background-color: #81d453;
+}
+
+.footer {
+    height: 100px;
+    background-color:#db3b26;
+}
+
+h2 {
+    text-align:center;
+}
