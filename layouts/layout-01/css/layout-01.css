@@ -3,9 +3,7 @@ body {
     padding: 0;
 }
 
-.top,
-.main,
-.footer {
+.container {
     max-width: 1200px;
     border: 1px dashed #333;
     margin: 5px auto;
