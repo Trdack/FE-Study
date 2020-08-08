@@ -32,7 +32,7 @@ a:visited {
 }
 
 a:hover {
-    color:#fff;
+    color:#0f0724;
 }
 
 .top {
@@ -162,7 +162,7 @@ a:hover {
     z-index: 30;
 }
 
-.shopping-cart_item a.open .shopping-cart_title{
+.shopping-cart_item a .shopping-cart_title{
     display: inline-block;
     padding: 0;
     width: 316px;
@@ -177,6 +177,8 @@ a:hover {
     color: #ff6700;
 }
 
+/* ------------- *//* ------------- */
+
 .top_header {
     width: 100%;
     height: 100px;
@@ -185,12 +187,12 @@ a:hover {
 .top_header--container {
     position: relative;
     margin: 0 auto;
-    padding-top: 22px;
     width: 1226px;
     height: 100px;
-    line-height: 100px;
 }
 
+/* ------------- */
+/* S top_header_logo */
 .top_header_logo,
 .top_header_nav,
 .top_header_search {
@@ -205,6 +207,7 @@ a:hover {
 
 .top .logo {
     position: relative;
+    top: 22.5px;
     display: block;
     width: 55px;
     height: 55px;
@@ -221,7 +224,7 @@ a:hover {
     content: "";
     width: 55px;
     height: 55px;
-    z-index: 1;
+    z-index: 10;
     transition: all .2s;
 }
 
@@ -242,28 +245,211 @@ a:hover {
 .top .logo:hover::after {
     left: 0;
 }
-
-
-.top_header_nav {    
+/* E top_header_logo */
+/* ------------- */
+/* S top_header_nav */
+.top_header_nav {
     margin: 0 10px;
     width: 850px;
+    height: 100px;
     text-align: center;
 }
 
+
+
 /* thn: top_header_nav */
+.thn_nav-category,
 .thn_item {
     display: inline-block;
     margin: 0 10px;
-    height: 55px;
-    line-height: 55px;
+    height: 100px;
+    line-height: 100px;
     font-size: .16rem;
 }
 
+.thn_nav-category:hover .thn_commodity-category {
+    display: block;
+}
+
+/* S top-header--commodity-category */
+.thn_commodity-category {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    display: none;
+    margin: 0 auto;
+    width: 1226px;
+    height: 460px;
+}
+
+ul.category-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    padding: 20px 0;
+    border: 1px solid #ff6700;
+    width: 234px;
+    height: 460px;
+    background: #fff;
+}
+
+li.category-item {
+    padding: 0 20px;
+    height: 42px;
+    line-height: 42px;
+}
+
+li.category-item:hover {
+    background: #ff6700;
+}
 
 
+li.category-item em.icon-right {
+    float: right;
+}
+
+li.category-item em.icon-right::before {
+    content: ">";
+    font-style: normal;
+}
+
+.children {
+    position: absolute;
+    top: 0;
+    left: 234px;
+    display: none;
+    width: 992px;
+    height: 460px;
+    background: transparent;
+    box-shadow: 0 8px 16px rgba(0,0,0,.18);
+}
+
+.children-col-3 {
+    width: 744px;
+}
+
+.children-col-2 {
+    width: 496px;
+}
+
+li.category-item:nth-child(n):hover .children:nth-child(n) {
+    display: inline-block;
+}
+
+ul.children-item {
+    width: 248px;
+    height: 460px;
+    background: #fff;
+    text-align: left;
+    float: left;
+}
+
+ul.children-item li {
+    padding-left: 15px;
+    height: 76px;
+    line-height: 76px;
+}
+
+
+ul.children-item li a:link,
+ul.children-item li a:visited {
+    display: inline-block;
+    height: 76px;
+    line-height: 76px;
+    color: #333;
+}
+
+
+ul.children-item li img {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+ul.children-item li span {
+    font-size: .15rem;
+    font-weight: normal;
+}
+/* E top-header--commodity-category */
+
+/* S top_header_nav ul li a */
+.top_header_nav>ul>li>a:hover {
+    color: #ff6700;
+}
+
+/* E top_header_nav */
+
+
+/* S search */
 .top_header_search {
-    margin-right: 0;
-    border: 1px solid #aaa;
+    margin: 22.5px 0;
+    border: 1px solid #ddd;
     width: 300px;
+}
+
+.top_header_search:hover {
+    border: 1px solid #aaa;
+}
+
+.top_header_search:hover .search_submit {
+    border-left: 1px solid #aaa;
+}
+
+.search_submit:hover {
+    width: 70px;
+    border: 1px solid #ff6700;
+    background: #ff6700;
+}
+
+.search_form {
+    position: relative;
+    width: 300px;
+    height: 53px;
+}
+
+.search_text,.search_submit {
+    position: absolute;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    height: 53px;
+    background: transparent;
+}
+
+.search_text {
+    width: 230px;
+}
+
+.search_text::placeholder {
+    padding-left: 10px;
+}
+
+.search_submit {
+    right: 0;
+    border-left: 1px solid #ddd;
+    width: 70px;
+}
+
+/* E search */
+
+/* E top_header */
+/* ------------- *//* ------------- */
+/* S main */
+
+.main {
+    position: relative;
+    width: 100%;
+    min-height: 900px;
+    background: #f5f5f5;
+}
+
+.main_breadcrumb {
+    margin: 0 auto;
+    width: 1226px;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
 }
 
