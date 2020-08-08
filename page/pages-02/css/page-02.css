@@ -21,6 +21,7 @@ body {
 
 ul,li {
     margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -94,6 +95,7 @@ a:hover {
     font-size: 14px;
     color: #333;
     box-shadow: 0 1px 5px #aaa;
+    z-index: 33;
 }
 
 .top_topbar a.open .open_content img {
@@ -148,7 +150,7 @@ a:hover {
     background: #fff;
 }
 
-.shopping-cart-item {
+.shopping-cart_item {
     position: absolute;
     top: 40px;
     display: none;
@@ -160,19 +162,108 @@ a:hover {
     z-index: 30;
 }
 
-.shopping-cart-item a.open .shopping-cart-title{
+.shopping-cart_item a.open .shopping-cart_title{
     display: inline-block;
     padding: 0;
     width: 316px;
     height: 100px;
 }
 
-.shopping-cart:hover a .shopping-cart-item {
+.shopping-cart:hover a .shopping-cart_item {
     display: block;
 }
 
-.shopping-cart:hover a .shopping-cart-title {
+.shopping-cart:hover a .shopping-cart_title {
     color: #ff6700;
 }
 
+.top_header {
+    width: 100%;
+    height: 100px;
+}
+
+.top_header--container {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 22px;
+    width: 1226px;
+    height: 100px;
+    line-height: 100px;
+}
+
+.top_header_logo,
+.top_header_nav,
+.top_header_search {
+    height: 55px;
+    line-height: 55px;
+    float: left;
+}
+
+.top_header_logo {
+    width: 55px;
+}
+
+.top .logo {
+    position: relative;
+    display: block;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    font-size: .1rem;
+    background: #ff6700;
+    overflow:hidden;
+}
+
+.top .logo::before,
+.top .logo::after {
+    position: absolute;
+    top: 0;
+    content: "";
+    width: 55px;
+    height: 55px;
+    z-index: 1;
+    transition: all .2s;
+}
+
+.top .logo::before {
+    left: 0;
+    background: url("./../img/mi-logo.png") no-repeat 50% 50%;
+}
+
+.top .logo::after {
+    left: -55px;
+    background: url("./../img/mi-home.png") no-repeat 50% 50%;
+}
+
+.top .logo:hover::before {
+    left: 55px;
+}
+
+.top .logo:hover::after {
+    left: 0;
+}
+
+
+.top_header_nav {    
+    margin: 0 10px;
+    width: 850px;
+    text-align: center;
+}
+
+/* thn: top_header_nav */
+.thn_item {
+    display: inline-block;
+    margin: 0 10px;
+    height: 55px;
+    line-height: 55px;
+    font-size: .16rem;
+}
+
+
+
+.top_header_search {
+    margin-right: 0;
+    border: 1px solid #aaa;
+    width: 300px;
+}
 
