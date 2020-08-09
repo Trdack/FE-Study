@@ -454,3 +454,65 @@ ul.children-item li span {
     text-align: left;
 }
 
+.main_rotation {
+    position: relative;
+    margin: 0 auto;
+    width: 1226px;
+    height: 250px;
+}
+
+.main_rotation_item {
+    position: absolute;
+    width: 1226px;
+    height: 250px;
+}
+
+.main_rotation_self-service {
+    margin: 0 auto;
+    width: 1226px;
+    height: 695px;
+}
+
+h2 {
+    text-align: center;
+    font-size: .30rem;
+    font-weight: 500;
+    color: #666;
+}
+
+.self-service_item {
+    position: relative;
+    margin: 0 14px 18px 0;
+    padding-top: 80px;
+    width: 296px;
+    height: 277px;
+    background: #fff;
+    text-align: center;
+    float: left;
+    transition: all .5s;
+}
+
+.self-service_item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.self-service_item:hover {
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    transform: translate3d(0,-10px,0);
+}
+
+.self-service_item:hover a,
+.self-service_item:hover a h3,
+.self-service_item:hover a span {
+    color: #ff6700;
+}
+
+.self-service_item h3 {
+    margin: 10px;
+    text-align: center;
+    font-size: .18rem;
+}
+
+.self-service_item span {
+    color: #666;
+}
