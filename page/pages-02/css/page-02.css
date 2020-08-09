@@ -514,5 +514,21 @@ h2 {
 }
 
 .service_item span {
+    display: block;
     color: #666;
+}
+
+.main_product-support {
+    margin: 0 auto;
+    width: 1226px;
+    height: 745px;
+}
+
+.main_ps {
+    padding-top: 40px;
+}
+
+.main_ps img {
+    width: 180px;
+    height: 180px;
 }
