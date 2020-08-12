@@ -191,3 +191,159 @@ ul.children-item li span {
 .rotation-item-choice .onthis {
     background: #fff;
 }
+
+
+.main {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    min-width: 100%;
+    background: #f5f5f5;
+}
+
+.flashsale {
+    position: relative;
+    margin: 0 auto;
+    width: 1226px;
+    height: 400px;
+}
+
+.flashsale-header {
+    width: 100%;
+    height: 60px;
+}
+
+h2.flashsale-title {
+    margin: 0 auto;
+    line-height: 60px;
+    font-size: .22rem;
+    font-weight: 200;
+}
+
+.flashsale-countdown {
+    border-top: 1px solid #ff5100;
+    width: 234px;
+    height: 340px;
+    background: #f1eded;
+    text-align: center;
+    float: left;
+}
+
+.flashsale-countdown img {
+    margin: 18px auto;
+}
+
+.flashsale-countdown .rounds {
+    margin: 45px auto 5px;
+    height: 46px;
+    font-size: .21rem;
+    color:#ef3a3b;
+}
+
+.flashsale-countdown .desc {
+    margin: 10px auto;
+    font-size: .16rem;
+    color: #777;
+}
+
+.countdown i {
+    font-style: normal;
+}
+
+.countdown span {
+    display: inline-block;
+    margin: 20px auto;
+    width: 46px;
+    height: 46px;
+    background: #605751;
+    color: #fff;
+}
+
+.countdown i,
+.countdown span {
+    font-size: .24rem;
+    line-height: 46px;
+}
+
+.flashsale-box {
+    position: relative;
+    margin-left: 14px;
+    width: 978px;
+    height: 340px;
+    float: left;
+    overflow: hidden;
+}
+
+ul.flashsale-list {
+    position: absolute;
+    width: 9780px;
+    height: 100%;
+}
+
+li.flashsale-commoditys {
+    display: inline-block;
+    margin: 0 14px 0 0;
+    border-top: 1px solid green;
+    width: 234px;
+    height: 100%;
+    background: #fff;
+    text-align: center;
+}
+
+li.flashsale-commoditys a:link,
+li.flashsale-commoditys a:visited {
+    display: block;
+    padding-top: 39px;
+    text-decoration: none;
+    color: #333;
+}
+
+li.flashsale-commoditys img {
+    width: 160px;
+    height: 160px;
+}
+
+li.flashsale-commoditys h3.title {
+    margin: 0 auto;
+    font-size: .14rem;
+    font-weight: 400;
+    color: #212121;
+}
+
+li.flashsale-commoditys span {
+    color: #ff6709;
+}
+.flashsale-back-next {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    width: 74px;
+    height: 25px;
+}
+
+.flashsale-back-next span {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid #777;
+    width: 36px;
+    height: 24px;
+    line-height: 22px;
+    text-align: center;
+    font-size: 16px;
+    float: left;
+    cursor: pointer;
+}
+
+.flashsale-back-next span:hover{
+    color: #ff6700;
+}
+
+.flashsale-back-next span.back::before {
+    content:"<";
+    text-align: center;
+}
+
+.flashsale-back-next span.next::before {
+    content:">";
+    text-align: center;
+}
